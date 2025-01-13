@@ -1,0 +1,201 @@
+:root {
+    /* Project colors */
+    --primary-color: #1b60a0;
+    --secondary-color: #3b3b3b;
+    --tertiary-color: #247BA0;
+    --default-color: #EEF0F2;
+    --hover-mode: #a7a7a7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 80vw;
+    margin: 0 auto;
+    font-family: "Nunito", sans-serif;
+    background-color: var(--default-color);
+}
+
+header {
+    display: grid;
+    position: relative;
+    grid-template-columns: auto auto auto;
+    background: rgb(16, 80, 122);
+    color: white;
+}
+
+
+header img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 10px;
+}
+
+header h1{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+/*START HAMBURGER MENU*/
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: white;
+ 	position: absolute;
+	top: 1rem;
+	right:1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+    justify-content: center;
+	background-color: black;
+	color: #fff;
+    text-align: center;
+}
+
+.navigation a {
+	/* display: none; */
+	padding: 0.5rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+/*END HAMBURGER MENU*/
+.open a {
+	display: block;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: var(--primary-color);
+    color: var(--default-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.about-content {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.profile-section {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .profile-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+.profile-image {
+    width: 200px;
+    height: auto;
+}
+
+.madagascar-section {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    align-items: start;
+}
+
+.flag {
+    width: 120px;
+    border: 1px solid var(--primary-color);
+    padding: 0.5rem;
+}
+
+.flag img {
+    width: 100%;
+    height: auto;
+}
+
+.flag-caption {
+    font-style: italic;
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.resources-list {
+    list-style: none;
+}
+
+.resources-list li {
+    margin-bottom: 0.5rem;
+}
+
+.resources-list a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.resources-list a:hover {
+    text-decoration: underline;
+}
+
+footer{
+    background: var(--primary-color);
+    color: var(--default-color);
+    text-align: center;
+    padding: 20px;
+}
+
+footer #mod{
+    color: yellow;
+}

@@ -3,9 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 231: Web Frontend Development I - Lizandro Vivanco</title>
+    <meta name="description" content="WDD 231: Web Frontend Development I">
+    <meta name="author" content="Lizandro Vivanco">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Permanent+Marker&display=swap" rel="stylesheet">
+
+      <!--  Essential META Tags -->
+    <meta property="og:title" content="WDD 231: Web Frontend Development I - Lizandro Vivanco">
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/City_of_Lima%2C_Peru.jpg/640px-City_of_Lima%2C_Peru.jpg">
+    <meta property="og:url" content="https://lizandrov.github.io/wdd131/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!--  Non-Essential, But Recommended -->
+    <meta property="og:description" content="WDD 231: Web Frontend Development I">
+    <meta property="og:site_name" content="Lizandro Vivanco">
+    <meta name="twitter:image:alt" content="Image of Lima, Peru">
+
+    <!--  Non-Essential, But Required for Analytics -->
+    <meta property="fb:app_id" content="Lizandro_Vivanco" />
+    <meta name="twitter:site" content="@LizandroV">
+
+    <!-- Scripts -->
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <header>
+        <img src="images/profile.webp" alt="Profile Picture">
+        <h1>Lizandro vivanco</h1>
+        <div><button id="menu"></button></div>
+    </header>
+        
+    <nav class="navigation">
+        <a href="./index.html">Home</a>
+        <a href="#" target="_blank">Chamber</a>
+        <a href="./form.html" target="_blank">GitHub Profile</a>
+        <a href="#" target="_blank">LinkedIn</a>
+    </nav>
+
+    <main class="main">
+        <section class="card">
+            <div class="card-header">
+                <h2>Course Work</h2>
+            </div>
+            <div class="card-content about-content">
+                <div class="profile-section">
+                    <p>
+                        . <br>
+                        . <br>
+                        . 
+                    </p>
+                    
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="card">
+            <div class="card-header">
+                <h2>Lima, Peru</h2>
+            </div>
+            <div class="card-content">
+                <ul class="resources-list">
+                    <img src="./images/peruflag.webp" alt="Peru Flag">
+                </ul>
+            </div>
+        </section>
+        <section class="card">
+            <div class="card-header">
+                <h2>Web and Computer Programming Certificate</h2>
+            </div>
+            <div class="card-content">
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="copyrightYear"></span> 🎮 Lizandro Vivanco 🎮 Peru</p>
+        <p id="mod">Last Modification: <span id="modified">Today</span></p>
+    </footer>
 </body>
 </html>

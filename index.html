@@ -17,6 +17,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lemon&family=Permanent+Marker&display=swap" rel="stylesheet">
 
@@ -38,11 +39,12 @@
 
     <!-- Scripts -->
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/hamburgerMenu.js" defer></script>
 </head>
 <body>
     <header>
         <img src="images/profile.webp" alt="Profile Picture">
-        <h1>Lizandro vivanco</h1>
+        <h1>Lizandro Vivanco</h1>
         <div><button id="menu"></button></div>
     </header>
         
@@ -54,39 +56,51 @@
     </nav>
 
     <main class="main">
-        <section class="card">
+        <section class="card course">
             <div class="card-header">
                 <h2>Course Work</h2>
             </div>
-            <div class="card-content about-content">
-                <div class="profile-section">
-                    <p>
-                        . <br>
-                        . <br>
-                        . 
-                    </p>
-                    
+            <div class="card-content">
+                <div class="course-section">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>    
                 </div>
-                
             </div>
         </section>
 
-        <section class="card">
+        <section class="card lima">
             <div class="card-header">
                 <h2>Lima, Peru</h2>
             </div>
             <div class="card-content">
-                <ul class="resources-list">
-                    <img src="./images/peruflag.webp" alt="Peru Flag">
+                <ul class="tourism-list">
+                    <img class="limabeach" src="./images/lima_beach.webp" alt="Peru Beach">
+                    <p class="limabeach-caption">Lima, Costa Verde</p>
                 </ul>
             </div>
         </section>
-        <section class="card">
+
+        <section class="card certificate">
             <div class="card-header">
                 <h2>Web and Computer Programming Certificate</h2>
             </div>
             <div class="card-content">
-                
+                <div class="buttons">
+                    <button>All</button>
+                    <button>CSE</button>
+                    <button>WDD</button>
+                </div>
+                <div class="certificates">
+                    <p>CSE 110</p>
+                    <p>WDD 130</p>
+                    <p>CSE 111</p>
+                    <p>CSE 210</p>
+                    <p>WDD 131</p>
+                    <p>WDD 231</p>
+                </div>
             </div>
         </section>
     </main>

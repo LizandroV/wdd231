@@ -1,0 +1,61 @@
+:root {
+    --primary-color: #007bff;
+    --error-color: #dc3545;
+    --font-family: Arial, sans-serif;
+  }
+  
+  form {
+    display: 	flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 70px;
+    width: 300px;
+  }
+  
+  form > div {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="range"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  .error-message {
+    color: var(--error-color);
+  }
+  
+  button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  form div input:required{
+    border-left: solid 5px red;
+  }
+
+  form div input:required:valid{
+    border-left: solid 5px green;
+  }
+  

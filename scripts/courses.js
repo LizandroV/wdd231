@@ -9,7 +9,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -22,7 +22,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -34,7 +34,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -46,7 +46,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -77,3 +77,33 @@ const courses = [
         completed: false
     }
 ]
+
+function displayCourses(filteredCourses) {
+    const courseList = document.getElementById('course-list');
+    courseList.innerHTML = ''; // Limpiar la lista antes de mostrar los cursos filtrados
+    let totalCredits = 0;
+
+    filteredCourses.forEach(course => {
+        const courseElement = document.createElement('p');
+        courseElement.textContent = `${course.subject} ${course.number}: ${course.title} (${course.credits} credits)`;
+        courseElement.classList.add(course.completed ? 'completed' : 'incomplete');
+        courseList.appendChild(courseElement);
+        totalCredits += course.completed ? course.credits : 0;
+    });
+
+    document.getElementById('total-credits').textContent = totalCredits;
+}
+
+// Filtrar cursos por tipo
+document.getElementById('allBtn').addEventListener('click', () => displayCourses(courses));
+document.getElementById('wddBtn').addEventListener('click', () => {
+    const filteredWddCourses = courses.filter(course => course.subject === 'WDD');
+    displayCourses(filteredWddCourses);
+});
+document.getElementById('cseBtn').addEventListener('click', () => {
+    const filteredCseCourses = courses.filter(course => course.subject === 'CSE');
+    displayCourses(filteredCseCourses);
+});
+
+// Mostrar todos los cursos inicialmente
+displayCourses(courses);

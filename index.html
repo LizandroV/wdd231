@@ -40,6 +40,7 @@
     <!-- Scripts -->
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/hamburgerMenu.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
 </head>
 <body>
     <header>
@@ -89,17 +90,13 @@
             </div>
             <div class="card-content">
                 <div class="buttons">
-                    <button>All</button>
-                    <button>CSE</button>
-                    <button>WDD</button>
+                    <button id="allBtn">All</button>
+                    <button id="wddBtn">WDD</button>
+                    <button id="cseBtn">CSE</button>
                 </div>
-                <div class="certificates">
-                    <p>CSE 110</p>
-                    <p>WDD 130</p>
-                    <p>CSE 111</p>
-                    <p>CSE 210</p>
-                    <p>WDD 131</p>
-                    <p>WDD 231</p>
+                <div class="certificates" id="course-list"></div>
+                <div id="credit-total">
+                    <p>Total Credits: <span id="total-credits">0</span></p>
                 </div>
             </div>
         </section>

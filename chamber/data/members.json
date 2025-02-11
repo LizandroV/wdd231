@@ -5,7 +5,7 @@
       "address": "Av. Aviación 2405, San Borja 15037",
       "phone": "+01 323-4567",
       "website": "https://www.tcs.com/",
-      "image": "https://media.licdn.com/dms/image/D4D0BAQGsGR9p4ikS5w/company-logo_200_200/0/1708946550425/tata_consultancy_services_logo?e=1718236800&v=beta&t=NtLqW4K9s_pPoLVrBCmvpBRtLYGVoQvpCUKlbVboDRo",
+      "image": "images/tata.jpeg",
       "membershipLevel": "images/gold.png"
     },
     {
@@ -13,7 +13,7 @@
       "address": "San Isidro 244, 15037",
       "phone": "+01 234-5678",
       "website": "https://latam.pg.com/",
-      "image": "https://media.licdn.com/dms/image/C4D0BAQGGCd-fMXfRWw/company-logo_200_200/0/1661448432247/procter_and_gamble_logo?e=1718236800&v=beta&t=zt7xHbZ0fVwFVqsKrSodX3qvpmRmrup-U3s8u8W5yjw",
+      "image": "images/pyg.png",
       "membershipLevel": "images/gold.png"
     },
     {
@@ -21,7 +21,7 @@
       "address": "Av. 28 de Julio 1011, Miraflores 15047",
       "phone": "(01) 2137970",
       "website": "https://www.globalventures.co.za",
-      "image": "https://media.licdn.com/dms/image/C4D0BAQHM4lxIkOneig/company-logo_200_200/0/1631376744528/colgate_palmolive_logo?e=1718236800&v=beta&t=wrcwbebFFlnU17NhBFaZQlbcKRH9mpvFCHPjZLZZYdk",
+      "image": "images/colgate.webp",
       "membershipLevel": "images/bronze.png"
     },
     {
@@ -29,7 +29,7 @@
       "address": "Calle 101 los Girasoles, San Borja",
       "phone": "+41 456-7890",
       "website": "https://www.sanofi.com/es/peru",
-      "image": "https://media.licdn.com/dms/image/D4E0BAQGgBWjzQcNH5Q/company-logo_200_200/0/1689840740282?e=1718236800&v=beta&t=ekP6Smix2PhIfhr92iovzajftmR_8Bie_5P3lolRl0g",
+      "image": "images/sanofi.png",
       "membershipLevel": "images/silver.png"
     },
     {
@@ -37,7 +37,7 @@
       "address": "Av 28 Julio 556, Lima 15047",
       "phone": "+51 567-8901",
       "website": "https://www.roche.com.pe/",
-      "image": "https://media.licdn.com/dms/image/D4D0BAQHPzvTi-YutVg/company-logo_200_200/0/1688473923373/roche_logo?e=1718236800&v=beta&t=L8j-BdoXlp8xFlhJyyqtm29ZKzYkNO6X3_sy2_-rxoM",
+      "image": "images/roche.png",
       "membershipLevel": "images/gold.png"
     },
     {
@@ -45,7 +45,7 @@
       "address": "303 Birch Street, Town, Country",
       "phone": "+27 (61) 678-9012",
       "website": "https://www.eurofarma.com.pe/",
-      "image": "https://media.licdn.com/dms/image/C4D0BAQFYrX8TfTdulQ/company-logo_200_200/0/1649075929847/eurofarma_logo?e=1718236800&v=beta&t=8w4LMXjj3z9-AYaxHaf_MKxbrecAjEVrtgx5L7A2-WA",
+      "image": "images/eurofarma.jpeg",
       "membershipLevel": "images/np.png"
     },
     {
@@ -53,7 +53,7 @@
       "address": "Av. República de Panamá 3591, San Isidro 15076",
       "phone": "01 7173350",
       "website": "https://www.globant.com/es",
-      "image": "https://media.licdn.com/dms/image/D560BAQHWB0kBTxn0kA/company-logo_200_200/0/1688411226388/globant_logo?e=1718236800&v=beta&t=uZFFP-xO_wRyjI2GH-wh2W_lK-Me2waijkUHmizUlX0",
+      "image": "images/globant.jpg",
       "membershipLevel": "images/np.png"
     },
     {
@@ -61,7 +61,7 @@
       "address": "Ovalo Santa Anita 554, Lima",
       "phone": "+51 890-1234",
       "website": "https://atento.com/es/",
-      "image": "https://media.licdn.com/dms/image/D4E0BAQEnK1_at9q3PA/company-logo_200_200/0/1656675003147/atento_logo?e=1718236800&v=beta&t=ocFG6CSEBNQjmvReSoI0Ty-uWpfTE4nehyvVGze8va0",
+      "image": "images/atento.png",
       "membershipLevel": "images/silver.png"
     },
     {
@@ -69,7 +69,7 @@
       "address": "Av Republica 606, San Martin",
       "phone": "01 901-2345",
       "website": "https://webhelp.com/es/",
-      "image": "https://media.licdn.com/dms/image/D4E0BAQFhqqtZO4NurQ/company-logo_200_200/0/1695636659104/webhelp_logo?e=1718236800&v=beta&t=L-q1gU0adEMVueN3Bodf-vxGrNm275nhrsjJEejZJA0",
+      "image": "images/webhelp.jpg",
       "membershipLevel": "images/gold.png"
     },
     {
@@ -77,7 +77,7 @@
       "address": "Av El Pino 707, Miraflores",
       "phone": "+27 (10) 012-3456",
       "website": "https://www.hapag-lloyd.com/es/home.html",
-      "image": "https://media.licdn.com/dms/image/D4E0BAQFuJSqZ0UvWZw/company-logo_200_200/0/1691738839057/hapag_lloyd_ag_logo?e=1718236800&v=beta&t=QQ0Nks8WKexOiI3al4HIAjgCAW_p4PJGJcNdbCznNOs",
+      "image": "images/hapag.jpg",
       "membershipLevel": "images/bronze.png"
     }
   ]

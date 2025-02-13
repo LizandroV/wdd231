@@ -77,20 +77,43 @@ const courses = [
         completed: false
     }
 ]
+function displayCourseDetails(course) {
+    const courseDetails = document.getElementById('course-details');
+    courseDetails.innerHTML = "";
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits:</strong>: ${course.credits}</p>
+        <p><strong>Certificate:</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies:</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+
+    const closeModal = document.getElementById('closeModal');
+    closeModal.addEventListener('click', () => courseDetails.close());
+};
 
 function displayCourses(filteredCourses) {
     const courseList = document.getElementById('course-list');
-    courseList.innerHTML = ''; // Limpiar la lista antes de mostrar los cursos filtrados
+    courseList.innerHTML = '';
     let totalCredits = 0;
 
     filteredCourses.forEach(course => {
         const courseElement = document.createElement('p');
         courseElement.textContent = `${course.subject} ${course.number}: ${course.title} (${course.credits} credits)`;
         courseElement.classList.add(course.completed ? 'completed' : 'incomplete');
+
+        // Agregar un evento de clic para mostrar detalles del curso
+        courseElement.addEventListener('click', () => {
+            console.log("Curso clickeado:", course.title); // Verificación
+            displayCourseDetails(course);
+        });
+
         courseList.appendChild(courseElement);
         totalCredits += course.completed ? course.credits : 0;
     });
-
     document.getElementById('total-credits').textContent = totalCredits;
 }
 
@@ -107,3 +130,5 @@ document.getElementById('cseBtn').addEventListener('click', () => {
 
 // Mostrar todos los cursos inicialmente
 displayCourses(courses);
+
+

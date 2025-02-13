@@ -170,6 +170,15 @@ header h1{
     margin: 10px 20px;
     border-radius: 8px;
 }
+#course-list p{
+    cursor: pointer;
+}
+
+#course-list p:hover{
+    background-color: var(--hover-mode);
+    color: var(--secondary-color);
+    font-weight: bold;
+}
 
 .completed {
     background-color: #a3e0a3;
@@ -178,6 +187,30 @@ header h1{
 
 .incomplete {
     background-color: #f0a3a3;
+}
+
+
+
+dialog{
+    margin: auto;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: var(--default-color);
+    width: 80%;
+    max-width: 600px;
+}
+
+::backdrop{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
 }
 
 #credit-total {
@@ -195,3 +228,79 @@ footer{
 footer #mod{
     color: yellow;
 }
+
+
+
+/* Animaciones */
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Animación para el curso al mostrarse */
+.course-item {
+    opacity: 0;
+    transform: scale(0.9);
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* Animación para el modal (cuando se abre) */
+#course-details {
+    display: none;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-out forwards;
+    transition: opacity 0.5s ease-out;
+}
+
+/* Modal visible */
+#course-details[open] {
+    display: block;
+    animation: slideIn 0.5s ease-out forwards;
+}
+
+/* Animación para el botón de cierre */
+#closeModal {
+    font-size: 28px;
+    background: none;
+    transition: transform 0.2s ease-out;
+}
+
+#closeModal:hover {
+    transform: scale(1.2);
+}
+
+/* Animación para los botones */
+button {
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+

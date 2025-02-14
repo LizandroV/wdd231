@@ -35,7 +35,6 @@
     <!-- Scripts -->
     <script src="scripts/app.js" type="module" defer></script>
     <script src="scripts/getdates.js" defer></script>
-</head>
 <body>
     <header>
         <nav>
@@ -49,8 +48,12 @@
         </nav>
     </header>
     <main>
-        <h1>Top 10 Recipes</h1>
-        <div id="recipes-container" class="recipes-container"></div>
+        <h1>Search Recipes</h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for recipes or ingredients">
+            <button id="search-button">Search</button>
+        </div>
+        <div id="search-results" class="recipes-container"></div>
         <!-- Modal -->
         <dialog id="recipe-modal" class="modal">
             <div class="modal-content">

@@ -49,8 +49,25 @@
         </nav>
     </header>
     <main>
-        <h1>Top 10 Recipes</h1>
-        <div id="recipes-container" class="recipes-container"></div>
+        <h1>Random Recipe</h1>
+        <div class="random-options">
+            <label for="meal-type">Meal Type:</label>
+            <select id="meal-type">
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dinner">Dinner</option>
+            </select>
+            <label for="prep-time">Preparation Time:</label>
+            <select id="prep-time">
+                <option value="15">15 minutes</option>
+                <option value="30">30 minutes</option>
+                <option value="45">45 minutes</option>
+                <option value="60">1 hour</option>
+            </select>
+            <button id="random-button" class="buttons">Get Recipe</button>
+        </div>
+        
+        <div id="random-recipe" class="recipes-container"></div>
         <!-- Modal -->
         <dialog id="recipe-modal" class="modal">
             <div class="modal-content">
